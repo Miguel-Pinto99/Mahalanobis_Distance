@@ -4,7 +4,87 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc54a63e-09df-4a55-89a3-16bf47369328" name="Changes" comment="" />
+    <list default="true" id="dc54a63e-09df-4a55-89a3-16bf47369328" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/MahalanobisDistance.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pyvenv.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/3d_drawing/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/3d_drawing/mayavi2_spring.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/3d_drawing/plot_basic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/algorithms/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/algorithms/WormNet.v3.benchmark.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/algorithms/hartford_drug.edgelist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/algorithms/plot_beam_search.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/algorithms/plot_betweenness_centrality.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/algorithms/plot_blockmodel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/algorithms/plot_circuits.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/algorithms/plot_davis_club.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/algorithms/plot_dedensification.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/algorithms/plot_girvan_newman.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/algorithms/plot_iterated_dynamical_systems.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/algorithms/plot_krackhardt_centrality.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/algorithms/plot_maximum_independent_set.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/algorithms/plot_parallel_betweenness.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/algorithms/plot_rcm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/algorithms/plot_snap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/algorithms/plot_subgraphs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/basic/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/basic/plot_properties.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/basic/plot_read_write.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/basic/plot_simple_graph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/drawing/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/drawing/chess_masters_WCC.pgn.bz2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/drawing/knuth_miles.txt.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/drawing/plot_center_node.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/drawing/plot_chess_masters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/drawing/plot_custom_node_icons.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/drawing/plot_degree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/drawing/plot_directed.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/drawing/plot_edge_colormap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/drawing/plot_ego_graph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/drawing/plot_eigenvalues.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/drawing/plot_four_grids.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/drawing/plot_house_with_colors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/drawing/plot_knuth_miles.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/drawing/plot_labels_and_colors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/drawing/plot_multipartite_graph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/drawing/plot_node_colormap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/drawing/plot_rainbow_coloring.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/drawing/plot_random_geometric_graph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/drawing/plot_sampson.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/drawing/plot_selfloops.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/drawing/plot_simple_path.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/drawing/plot_spectral_grid.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/drawing/plot_tsp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/drawing/plot_unix_email.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/drawing/plot_weighted_graph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/drawing/unix_email.mbox" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/graph/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/graph/plot_dag_layout.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/graph/plot_degree_sequence.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/graph/plot_erdos_renyi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/graph/plot_expected_degree_sequence.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/graph/plot_football.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/graph/plot_karate_club.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/graph/plot_morse_trie.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/graph/plot_mst.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/graph/plot_napoleon_russian_campaign.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/graph/plot_roget.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/graph/plot_triad_types.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/graph/plot_words.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/graph/roget_dat.txt.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/graph/words_dat.txt.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/subclass/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/subclass/plot_antigraph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/share/doc/networkx-3.1/examples/subclass/plot_printgraph.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
