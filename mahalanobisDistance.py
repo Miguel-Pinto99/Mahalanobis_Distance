@@ -49,12 +49,10 @@ class mahalanobisDistanceClass():
 
 
         #Segmentation of every shape inside image and finding properties
-
-
         label_im = label(image)
         regions = regionprops(label_im)
 
-
+        #Specifing each property we are going to use
         properties = ["eccentricity", "solidity",'moments_hu','area','perimeter_crofton']
         props = pd.DataFrame(regionprops_table(label_im, image,
                                                properties=properties))
@@ -91,7 +89,7 @@ class mahalanobisDistanceClass():
     def createModels(self):
 
         """
-        Creating models which are going to be compare with test image
+        Creating models which are going to be compare with test image.
         """
 
         props = self.props
@@ -188,6 +186,8 @@ class mahalanobisDistanceClass():
 
             modelFrame = pd.DataFrame(buildModel, columns=properties)
 
+            # If it is the first iteration, create new dataframe. Otherwise just append the resutls to the one
+            # already existing
             if i == 0:
                 dftv = pd.DataFrame(data, columns=properties)
                 values = pd.DataFrame(data, columns=properties)
