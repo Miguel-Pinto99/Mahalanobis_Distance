@@ -28,8 +28,18 @@ class mahalanobisDistanceClass():
             name_test = []
             filenames = []
 
+        # path = fr'D:\OneDrive - Affix Engineering BV\MahalanobisDistance\data\part10\2023-11-13\color'
+        #
+        # filenames_dir = os.listdir(path)
+        # filenames = []
+        #
+        # for i in range(len(filenames_dir)):
+        #     filenames.append(str(path + '\\' + filenames_dir[i]))
+        # name_test = filenames_dir
+
         self.filenames = filenames
         self.name_test = name_test
+
     def getShapes(self,name):
 
         """
@@ -115,7 +125,7 @@ class mahalanobisDistanceClass():
 
         model4 = np.array([
             [0.8469, 0.81604, 0.24227, 0.133711],
-            [0.8369, 0.81876, 0.24128, 0.130262],
+            [0.8369, 0.81876, 0.24128, 0.138262],
             [0.8430, 0.80636, 0.23863, 0.126989],
             [0.8370, 0.83887, 0.23579, 0.133548],
             [0.8270, 0.79887, 0.25579, 0.120160],
@@ -209,13 +219,21 @@ class mahalanobisDistanceClass():
             minIndex = 'Above '+str(threshold)+' threshold. None found!'
 
         # print everything to consule
+        # if minIndex != 4:
+        #     # print(minValue)
+        #     print(minIndex)
+        #     pd.set_option('display.max_columns', None)
+        #     dftv.head()
+        #     print(dftv)
+
+        # print everything to consule
         print(minValue)
         print(minIndex)
         pd.set_option('display.max_columns', None)
         dftv.head()
         print(dftv)
 
-    def calculateMahalanobis(y=None, data=None, cov=None):
+    def calculateMahalanobis(self,y=None, data=None, cov=None):
 
         """
         Compute the Mahalanobis Distance between each row of y and the data
@@ -240,17 +258,17 @@ class mahalanobisDistanceClass():
         return mahal.diagonal()
 
 
-    def normalize(mahalanobisList):
-
-        """
-        Get values in a scale of 0 to 1. DONT! use when values are to far apart! Otherwise most ouputs values will be zero
-        """
-
-        maxNumber = max(mahalanobisList, key=int)
-        newMahalanobisList = []
-        for a in range(len(mahalanobisList)):
-            newMahalanobisList.append(mahalanobisList[a] / maxNumber)
-        return newMahalanobisList
+    # def normalize(self,mahalanobisList):
+    #
+    #     """
+    #     Get values in a scale of 0 to 1. DONT! use when values are to far apart! Otherwise most ouputs values will be zero
+    #     """
+    #
+    #     maxNumber = max(mahalanobisList, key=int)
+    #     newMahalanobisList = []
+    #     for a in range(len(mahalanobisList)):
+    #         newMahalanobisList.append(mahalanobisList[a] / maxNumber)
+    #     return newMahalanobisList
 
 def main():
 
