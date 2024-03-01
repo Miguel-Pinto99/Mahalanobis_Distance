@@ -13,9 +13,9 @@ class mahalanobisDistanceClass():
         pass
 
     def loadFile(self):
-
         """
-        Load File and save in variables
+        The function `loadFile` allows the user to select image files and stores the selected filenames and corresponding
+        names in the class attributes.
         """
 
         filetypes_test = (("Image files (*.png, *.jpg, *.bmp)", "*.png *.jpg *.bmp"), ("All Files", "*.*"))
@@ -41,9 +41,12 @@ class mahalanobisDistanceClass():
         self.name_test = name_test
 
     def getShapes(self,name):
-
         """
-        Segmentation of every shape inside image and finding properties
+        This Python function performs segmentation of shapes in an image, extracts specific properties of the shapes,
+        calculates compactness, and saves relevant variables for further use.
+
+        :param name: The `name` parameter in the `getShapes` method is used to specify the file path of the image from which
+        shapes will be segmented and properties will be extracted
         """
 
 
@@ -97,9 +100,9 @@ class mahalanobisDistanceClass():
         # plt.show()
 
     def createModels(self):
-
         """
-        Creating models which are going to be compare with test image.
+        The `createModels` function creates models for comparison with test images based on specified properties and stores
+        them in an array for later use.
         """
 
         props = self.props
@@ -166,10 +169,11 @@ class mahalanobisDistanceClass():
 
         self.arraModels = arrayModels
         self.data = data
-    def calculateDistance(self):
 
+    def calculateDistance(self):
         """
-        Calculating distance and find matching match
+        This Python function calculates the Mahalanobis distance for a set of models and data points, and identifies the
+        model with the closest match based on the minimum distance.
         """
 
         data = self.data
@@ -234,13 +238,21 @@ class mahalanobisDistanceClass():
         print(dftv)
 
     def calculateMahalanobis(self,y=None, data=None, cov=None):
-
         """
-        Compute the Mahalanobis Distance between each row of y and the data
+        The function calculates the Mahalanobis distance for a given data point relative to a dataset.
 
-        y    : vector or matrix of data with, say, p columns.(DATA WE WANT TO MATCH)
-        data : ndarray of the distribution from which Mahalanobis distance of each observation of y is to be computed.(MODEL)
-        cov  : covariance matrix (p x p) of the distribution. If None, will be computed from data.
+        :param y: The `y` parameter in the `calculateMahalanobis` function represents the data point for which you want to
+        calculate the Mahalanobis distance. It is the point you want to compare to the dataset represented by the `data`
+        parameter
+        :param data: The `data` parameter in the `calculateMahalanobis` function seems to represent a dataset or a matrix of
+        data points. It is used to calculate the mean and covariance matrix for the Mahalanobis distance calculation
+        :param cov: The `cov` parameter in the `calculateMahalanobis` function represents the covariance matrix. It is used
+        to calculate the Mahalanobis distance, which is a measure of the distance between a point and a distribution. The
+        covariance matrix describes the relationship between multiple variables in a dataset by showing
+        :return: The function `calculateMahalanobis` is returning the Mahalanobis distance for the input vector `y` with
+        respect to the provided data and covariance matrix. The Mahalanobis distance is a measure of the distance between a
+        point and a distribution, taking into account the covariance of the data. The function calculates the Mahalanobis
+        distance for each point in the input vector `y
         """
 
         mean = data.mean()
@@ -258,17 +270,25 @@ class mahalanobisDistanceClass():
         return mahal.diagonal()
 
 
-    # def normalize(self,mahalanobisList):
-    #
-    #     """
-    #     Get values in a scale of 0 to 1. DONT! use when values are to far apart! Otherwise most ouputs values will be zero
-    #     """
-    #
-    #     maxNumber = max(mahalanobisList, key=int)
-    #     newMahalanobisList = []
-    #     for a in range(len(mahalanobisList)):
-    #         newMahalanobisList.append(mahalanobisList[a] / maxNumber)
-    #     return newMahalanobisList
+    def normalize(self,mahalanobisList):
+
+        """
+        The function `normalize` scales values in a list to a range of 0 to 1, but caution is advised when values are too
+        far apart to avoid most output values being zero.
+
+        :param mahalanobisList: The `normalize` function you provided seems to be normalizing the values in
+        `mahalanobisList` to a scale of 0 to 1 by dividing each value by the maximum value in the list. However, there are a
+        couple of improvements that can be made to the function:
+        :return: The `normalize` function returns a new list `newMahalanobisList` where each element is the original element
+        from `mahalanobisList` divided by the maximum value in `mahalanobisList`. This is done to scale the values in
+        `mahalanobisList` to a range between 0 and 1.
+        """
+
+        maxNumber = max(mahalanobisList, key=int)
+        newMahalanobisList = []
+        for a in range(len(mahalanobisList)):
+            newMahalanobisList.append(mahalanobisList[a] / maxNumber)
+        return newMahalanobisList
 
 def main():
 
@@ -279,9 +299,5 @@ def main():
         matchShapeClass.getShapes(name)
         matchShapeClass.createModels()
         matchShapeClass.calculateDistance()
-
-
-
-
 if __name__ == '__main__':
     main()
